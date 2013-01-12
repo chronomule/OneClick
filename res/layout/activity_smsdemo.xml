@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+      android:layout_height="wrap_content" 
+      android:scrollbars="vertical">
+      
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:orientation="vertical"
+          android:padding="10dp">
+ 
+      <EditText
+          android:id="@+id/phoneNumber"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/EnterNumber"        
+          android:inputType="phone"
+           />
+      
+      
+      <EditText 
+          android:id="@+id/messageText"
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content"
+          android:minHeight="140dp"
+          android:hint="@string/EnterMessage"
+          />
+  
+      <Button
+          android:id="@+id/codeButton" 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/SMSProgrammatically"/>
+      
+      <Button
+          android:id="@+id/intentButton" 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/SMSIntent"/>
+      
+      <Button
+          android:id="@+id/sendAndSaveButton" 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/SaveInSent"/>
+       
+      </LinearLayout>
+ </ScrollView>
